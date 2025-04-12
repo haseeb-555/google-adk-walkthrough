@@ -1,0 +1,28 @@
+<!-- templates/form_page.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+
+    <form method="POST">
+      {{ form.hidden_tag() }} {{ form.city.label }}<br />
+      {{ form.city(size=30) }}<br />
+      {% for error in form.city.errors %}
+      <span style="color: red">{{ error }}</span><br />
+      {% endfor %}
+      <br />
+      {{ form.submit() }}
+    </form>
+
+    {% if response %}
+    <h3>Agent Response:</h3>
+    <p>{{ response }}</p>
+    {% endif %}
+
+    <br />
+    <a href="/">Back to Home</a>
+  </body>
+</html>
