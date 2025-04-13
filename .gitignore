@@ -1,3 +1,7 @@
 /venv
 /multi-tool-agent/.env
 /adk-streaming/app/.env
+/Llm-agents/.env
+/workflow-agents/loop-agent/.env
+/workflow-agents/parallel-agent/.env
+/workflow-agents/sequential-agent/.env
