@@ -6,3 +6,4 @@
 /workflow-agents/parallel-agent/.env
 /workflow-agents/sequential-agent/.env
 /custom-agent/.env
+/multi-agent-system/.env
